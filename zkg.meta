@@ -1,0 +1,5 @@
+[package]
+description = Filter hooks for log volume reduction
+tags = log, logging
+script_dir = scripts
+depends = zeek >=4.0
