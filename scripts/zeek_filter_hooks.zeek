@@ -43,7 +43,7 @@ hook DNS::log_policy(rec: DNS::Info, id: Log::ID, filter: Log::Filter)
 
     local q = rec$query;
     if (++recent_queries[q] > 500) {
-        add spammy_queries [q];
+        add spammy_queries[q];
     }
 
     if (q in spammy_queries )
